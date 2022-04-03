@@ -1,0 +1,57 @@
+{
+ "creation": "2022-04-03 10:04:10.942858",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asistente",
+  "nombre_completo",
+  "column_break_3",
+  "accepted",
+  "attended"
+ ],
+ "fields": [
+  {
+   "fieldname": "asistente",
+   "fieldtype": "Link",
+   "label": "Asistente",
+   "options": "User"
+  },
+  {
+   "fieldname": "nombre_completo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Completo",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "accepted",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Invitaci\u00f3n aceptada?"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "attended",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Asisti\u00f3?"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-04-03 10:30:38.521206",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "docTypeMeetingAttendes",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

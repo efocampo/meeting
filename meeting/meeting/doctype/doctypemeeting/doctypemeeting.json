@@ -1,0 +1,134 @@
+{
+ "autoname": "Reuni\u00f3n-.#",
+ "creation": "2022-04-03 00:01:32.029767",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asunto",
+  "estado",
+  "fecha",
+  "column_break_3",
+  "hora_desde",
+  "hora_hasta",
+  "agenda_section",
+  "agenda",
+  "asistentes_seccion",
+  "asistentes",
+  "acuerdos_seccion",
+  "acuerdos_tabla"
+ ],
+ "fields": [
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hora_desde",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Hora Desde",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hora_hasta",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Hora Hasta",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Planificado\nEn Progreso\nCompletado\nCancelado",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asunto",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asunto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Table",
+   "label": "Agenda",
+   "options": "docTypeMeetingChild",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "agenda_section",
+   "fieldtype": "Section Break",
+   "label": "Agenda"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "acuerdos_seccion",
+   "fieldtype": "Section Break",
+   "label": "Acuerdos"
+  },
+  {
+   "fieldname": "acuerdos_tabla",
+   "fieldtype": "Table",
+   "label": "Acuerdos",
+   "options": "docTypeMeetingChildResponsable"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "asistentes_seccion",
+   "fieldtype": "Section Break",
+   "label": "Asistentes"
+  },
+  {
+   "fieldname": "asistentes",
+   "fieldtype": "Table",
+   "label": "Asistentes",
+   "options": "docTypeMeetingAttendes"
+  }
+ ],
+ "modified": "2022-04-03 10:19:56.331650",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "docTypeMeeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gestor de Reuniones",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

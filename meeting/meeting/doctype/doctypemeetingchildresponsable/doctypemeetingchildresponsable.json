@@ -1,0 +1,57 @@
+{
+ "creation": "2022-04-03 09:29:02.325360",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "descripcion",
+  "accion",
+  "estado",
+  "assignado_a",
+  "completado_el"
+ ],
+ "fields": [
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Descripci\u00f3n"
+  },
+  {
+   "fieldname": "accion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Acci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Estado",
+   "options": "Abierto\nCerrado"
+  },
+  {
+   "fieldname": "assignado_a",
+   "fieldtype": "Link",
+   "label": "Asignado a",
+   "options": "User"
+  },
+  {
+   "fieldname": "completado_el",
+   "fieldtype": "Date",
+   "label": "Completado el"
+  }
+ ],
+ "istable": 1,
+ "modified": "2022-04-03 09:29:02.325360",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "docTypeMeetingChildResponsable",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
